@@ -18,7 +18,7 @@
 ### Links
 
 - Solution URL: https://github.com/HediElOuni/Shortly
-- Live Site URL: 
+- Live Site URL: https://hedielouni.github.io/Shortly/
 
 ## My process
 
