@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Shortly URL shortening API Challenge | Frontend Mentor</title>
+</head>
+<body>
+  <header>
+    <div class="h-cont">
+      <img src="./images/logo.svg">
+      <div class="h-navs">
+        <nav>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+        </nav>
+        <hr>
+        <nav>
+          <a href="#">Login</a>
+          <a href="#" class="btn">Sign Up</a>
+        </nav>
+      </div>
+      <button class="nav-btn" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="sec1">
+      <div class="sec1-c">
+        <h1>More than just shorter links</h1>
+        <p>
+          Build your brand’s recognition and get detailed insights
+          on how your links are performing.
+        </p>
+        <button class="btn">Get Started</button>
+      </div>
+      <img src="./images/illustration-working.svg">
+    </section>
+    <section class="sec2">
+      <div class="sec2-c">
+        <form id="urlForm">
+          <input type="text" id="longUrl" placeholder="Shorten a link here...">
+          <input type="submit" class="btn" value="Shorten It!">
+          <div id="err"></div>
+        </form>
+        <div id="links">
+          <div class="urls">
+            <div id="elongatedUrl"></div>
+            <div id="shortenedUrl"></div>
+          </div>
+          <button class="btn" onclick="copyText()">Copy</button>
+        </div>
+        <div class="stats">
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our
+            advanced statistics dashboard.
+          </p>
+        </div>
+        <div class="ftrs">
+          <div class="line"></div>
+          <div class="ftr ftr-f">
+            <div class="ftr-img-c">
+              <img src="./images/icon-brand-recognition.svg">
+            </div>
+            <h3>Brand Recognition</h3>
+            <p>
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your content.
+            </p>
+          </div>
+          <div class="ftr">
+            <div class="ftr-img-c">
+              <img src="./images/icon-detailed-records.svg">
+            </div>
+            <h3>Detailed Records</h3>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions.
+            </p>
+          </div>
+          <div class="ftr ftr-l">
+            <div class="ftr-img-c">
+              <img src="./images/icon-fully-customizable.svg">
+            </div>
+            <h3>Fully Customizable</h3>
+            <p>
+              Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec3">
+      <h2>Boost your links today</h2>
+      <button class="btn">Get Started</button>
+    </section>
+  </main>
+  <footer>
+    <div class="f-cont">
+      <img src="./images/logo-w.svg">
+      <div class="f-navs">
+        <nav class="about">
+          <b>Features</b>
+          <a href="#">Link Shortening</a>
+          <a href="#">Branded Links</a>
+          <a href="#">Analytics</a>
+        </nav>
+        <nav class="about">
+          <b>Resources</b>
+          <a href="#">Blog</a>
+          <a href="#">Developers</a>
+          <a href="#">Support</a>
+        </nav>
+        <nav class="about">
+          <b>Company</b>
+          <a href="#">About</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </nav>
+        <nav class="social-media">
+          <a href="#">
+            <img src="./images/icon-facebook-i.svg">
+            <img src="./images/icon-facebook-h.svg">
+          </a>
+          <a href="#">
+            <img src="./images/icon-twitter-i.svg">
+            <img src="./images/icon-twitter-h.svg">
+          </a>
+          <a href="#">
+            <img src="./images/icon-pinterest-i.svg">
+            <img src="./images/icon-pinterest-h.svg">
+          </a>
+          <a href="#">
+            <img src="./images/icon-instagram-i.svg">
+            <img src="./images/icon-instagram-h.svg">
+          </a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
